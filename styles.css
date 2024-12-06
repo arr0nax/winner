@@ -1,0 +1,51 @@
+#wincontainer {
+    background-color: goldenrod;
+    height: 100vh;
+    width: 100vw;
+    padding: 1%;
+    position: absolute;
+    overflow: hidden;
+}
+
+.title {
+    font-size: 10em;
+    font-style: italic;
+    font-weight: bolder;
+    color: blue;
+    position: relative;
+}
+
+.rain {
+    position: absolute;
+}
+
+.fall {
+    animation: faller 10s linear infinite;
+  }
+  
+  @keyframes faller {
+    100% {transform:translateY(5000%);}
+  }
+
+.blink {
+    animation: blinker 1s linear infinite;
+  }
+  
+  @keyframes blinker {
+    50% {opacity: 0;}
+  }
+
+.blinkbounce {
+    animation: bouncer 2s linear infinite;
+  }
+  
+  @keyframes bouncer {
+    25% {opacity: 0;}
+    50% {opacity: 1; transform:translateX(10%); }
+    75% {opacity: 0;}
+  }
+
+body {
+    padding: 0;
+    margin: 0;
+}

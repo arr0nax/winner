@@ -7,6 +7,30 @@
     overflow: hidden;
 }
 
+#login {
+  height: 50vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#label, #password, #submit {
+  font-size: 2em;
+}
+
+#submit {
+  margin-top: 1em;
+}
+
+#wrong {
+  position: absolute;
+  width: 100vw;
+  display: none;
+  pointer-events: none;
+}
+
 #title {
     font-size: 10em;
     font-style: italic;
@@ -86,6 +110,24 @@
     50% {opacity: 1; transform:translateX(10%); }
     75% {opacity: 0;}
   }
+
+.shakewildly {
+    animation: shaker 300ms linear;
+  }
+
+  @keyframes shaker {
+      10% {transform: translate3d(-100px, 0px, 0);}
+      20% {transform: translate3d(-500px, 100px, 0);}
+      30% {transform: translate3d(200px, 0px, 0);}
+      40% {transform: translate3d(300px, 100px, 0);}
+      50% {transform: translate3d(-200px, 0px, 0);}
+      60% {transform: translate3d(-100px, 100px, 0);}
+      70% {transform: translate3d(400px, 0px, 0);}
+      80% {transform: translate3d(-300px, 100px, 0);}
+      90% {transform: translate3d(200px, 0px, 0);}
+      100% {transform: translate3d(0, 0, 0);}
+  }
+
 
 body {
     padding: 0;

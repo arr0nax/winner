@@ -1,11 +1,16 @@
 <head>
-    <script src="./index.js"></script> 
+    <style>
+        * {} /* empty stylesheet0 solves the problem */
+    </style>
     <link rel="stylesheet" href="styles.css">
+    <script src="./index.js"></script> 
+
 </head>
 <body>
     <div class="container" id="login">
-        <label for="password">password:</label>
-        <input id="password" type="text" name="password">
+        <label id="label" for="password">password:</label>
+        <input id="password" type="text" name="password" autofocus>
         <input id="submit" type="button" value="Submit">
+        <img id="wrong" src="forbidden.png"/>
     </div>
 </body>

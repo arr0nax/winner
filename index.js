@@ -1,14 +1,25 @@
 document.addEventListener("DOMContentLoaded", function(){
     console.log('hello')
-    let login_page = document.getElementById("login")
-    let winner_page = document.getElementById("winner")
+    let login = document.getElementById("login")
 
+    let input = document.getElementById("password")
     let submit = document.getElementById("submit")
+    let wrong = document.getElementById("wrong")
+
     submit.addEventListener("click", function() {
         console.log('hello')
-        password = document.getElementById("password").value
+        password = input.value
         if (password == "winner") {
             location.href = 'winner.html';
+        } else {
+            wrong.style.display = "block"
+            login.classList.add("shakewildly")
+            setTimeout(function() {
+                wrong.style.display = "none"
+                login.classList.remove("shakewildly")
+                input.value = ""
+                input.focus();
+            }, 300)
         }
     }) 
 });

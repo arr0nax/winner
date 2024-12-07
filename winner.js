@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     wincontainer = document.getElementById("wincontainer")
 
-    let maxleft = window.screen.width * 2.6
+    let maxleft = window.screen.width * 2.7
     let looptime = 10; // 10s loop time on falling
 
     for (var i = 0; i<100; i++) {
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function(){
         rain.style.width = "50px"
         rain.style.opacity = "50%"
         rain.style.animationDelay = Math.random() * looptime + "s";
-        rain.style.left = Math.random() * maxleft + "px";
+        rain.style.left = (Math.random() * maxleft) - 50 + "px";
         wincontainer.appendChild(rain)
 
     }

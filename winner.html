@@ -1,4 +1,5 @@
 <head>
+    <!DOCTYPE html>
     <script src="./winner.js"></script> 
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -6,12 +7,18 @@
 
     <div id="wincontainer">
         <div class="blinkbounce title">WINNER!!!</div>
-        <audio id="song" loop controls>
-            <source src="song.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
+        <div class="slowblink title youwon">you won</div>
+        <div class="songcontainer">
+            <h1>PLAY THE WINNER'S SONG ------></h1>
+            <audio id="song" loop controls>
+                <source src="song.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
         <div id="videocontainer">
-            <video id="video" width="320" height="240" controls loop disablepictureinpicture playsinline>
+            <h1 id="livestream" class="blink">WINNER LIVE STREAM</h1>
+            <img id="laurel" src="laurel.png"/>
+            <video id="video" width="320" height="240" controls loop disablepictureinpicture playsinline autoplay>
                 <source src="winner.webm" type="video/webm">
             </video>
         </div>

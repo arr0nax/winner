@@ -7,7 +7,7 @@
     overflow: hidden;
 }
 
-.title {
+#title {
     font-size: 10em;
     font-style: italic;
     font-weight: bolder;
@@ -15,9 +15,12 @@
     position: relative;
 }
 
-.youwon {
+#youwon {
     font-size: 30em;
     text-align: center;
+    font-style: italic;
+    font-weight: bolder;
+    color: blue;
     position: absolute;
     pointer-events: none;
 }

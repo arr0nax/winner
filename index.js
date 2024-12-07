@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function(){
     submit.addEventListener("click", function() {
         console.log('hello')
         password = input.value
-        if (password == "winner") {
+        if (password.toLowerCase() == "winner") {
             location.href = 'winner.html';
         } else {
             wrong.style.display = "block"
